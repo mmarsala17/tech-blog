@@ -6,22 +6,22 @@
     },
     {
         "name": "Lorenzo",
-        "email": "lorenzo@hotmail.com",
-        "password": "34567889"
+        "email": "lorenzo@gmail.com",
+        "password": "password"
     },
     {
         "name": "Alex",
-        "email": "alex@yahoo.com",
-        "password": "asdfg"
+        "email": "alex@gmail.com",
+        "password": "password"
     },
     {
         "name": "Joe",
-        "email": "joe@outlook.com",
-        "password": "poiuoytr"
+        "email": "joe@gmail.com",
+        "password": "password"
     },
     {
         "name": "Bruce",
         "email": "bruce@gmail.com",
-        "password": "mnbncvmv"
+        "password": "password"
     }
 ]
