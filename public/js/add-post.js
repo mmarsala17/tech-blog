@@ -8,6 +8,9 @@ const postFormHandler = async (event) => {
 
         console.log('sending POST request to the API endpoint to create a blog post');
 
+        console.log(postTitle);
+        console.log(postContent);
+
         const response = await fetch('/api/posts', {
             method: 'POST',
             body: JSON.stringify({ postTitle, postContent }),
