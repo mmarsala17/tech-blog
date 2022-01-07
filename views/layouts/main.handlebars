@@ -17,14 +17,14 @@
 
             <a class="navbar-brand" href="#">Home</a>
 
-            <a class="navbar-brand" href="#">Dashboard</a>
+            <a class="navbar-brand" href="/dashboard">Dashboard</a>
 
             {{#unless logged_in}}
             <a class="navbar-brand" href="/login">Login</a>
             {{/unless}}
 
             {{#if logged_in}}
-            <a class="navbar-brand" href="/logout">Logout</a>
+            <button class="btn btn-lg btn-light" id="logout" type="button">Logout</button>
             {{/if}}
         </div>
 
