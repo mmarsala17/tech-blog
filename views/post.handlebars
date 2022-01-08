@@ -1,4 +1,4 @@
-<div class="card w-80 m-4">
+<div class="card w-40 m-4">
 
     <div class="card-header">
         <h5>{{title}}</h5>
@@ -9,9 +9,12 @@
         <p>{{content}}</p>
     </div>
 
-    <button class="btn btn-sm btn-primary m-4" id="updateBtn" data-id="id">Update</button>
+    {{#if isOwner}}
+    <button class="btn btn-sm btn-primary m-3" id="updateBtn" data-id="{{id}}">Update Post</button>
+    <button class="btn btn-sm btn-danger m-3" id="deleteBtn" data-id"{{id}}">Delete Post</button>
+    {{/if}}
 
-    <button class="btn btn-sm btn-danger m-4" id="deleteBtn" data-id="id">Delete</button>
+    <button class="btn btn-sm btn-danger m-3" id="deleteBtn" data-id="{{id}}">Add Coment</button>
 </div>
 
 <script src="../public/js/post.js"></script>
