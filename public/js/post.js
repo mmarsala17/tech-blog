@@ -1,5 +1,15 @@
 
 
+const updateButtonHandler = async (event) => {
+
+    console.log('update button selected')
+
+    const id = event.target.getAttribute('data-id');
+
+    document.location.replace('/updatepost/$${id}');
+
+};
+
 const delButtonHandler = async (event) => {
 
     console.log('del button clicked')

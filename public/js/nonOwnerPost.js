@@ -6,7 +6,10 @@ const commentFormHandler = async (event) => {
     console.log('button selected for comment');
 
     const content = document.querySelector('#commentInput').Value.trim();
+    const post_id = document.querySelector('#post_id').dataset.id;
+    
     console.log(content);
+    console.log(post_id);
 
     if (content) {
 
@@ -14,7 +17,7 @@ const commentFormHandler = async (event) => {
 
         const response = await fetch('/api/comments', {
             method: 'POST',
-            body: JSON.stringify{{ content }}, 
+            body: JSON.stringify{{ content, post_id }}, 
             headers: { 'Content-Type': 'application/json' },
         });
 
