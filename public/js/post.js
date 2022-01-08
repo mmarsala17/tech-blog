@@ -1,10 +1,3 @@
-const updateButtonHandler = async (event) => {
-    console.log('button clicked')
-
-    const id = event.target.getAttribute('data-id');
-
-    document.location.replace('/add-post')
-};
 
 
 const delButtonHandler = async (event) => {
@@ -28,6 +21,4 @@ document
     .querySelector('#deleteBtn')
     .addEventListener('click', delButtonHandler);
 
-    document
-    .querySelector("#updateBtn")
-    .addEventListener('click', updateButtonHandler);
+ 
