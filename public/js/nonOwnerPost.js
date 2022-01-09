@@ -3,13 +3,10 @@ const { response } = require("express");
 const commentFormHandler = async (event) => {
     event.preventDefault();
 
-    console.log('button selected for comment');
 
     const content = document.querySelector('#commentInput').Value.trim();
     const post_id = document.querySelector('#post_id').dataset.id;
     
-    console.log(content);
-    console.log(post_id);
 
     if (content) {
 
