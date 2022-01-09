@@ -22,7 +22,7 @@ const commentFormHandler = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/dashboard');
+            document.location.replace('/post/${post_id}');
         } else {
             alert(response.statusText);
         }

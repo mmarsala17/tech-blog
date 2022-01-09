@@ -16,7 +16,6 @@ router.get('/dashboard', withAuth, async (req, res) => {
     const posts = postData.map((post) => post.get({ plain: true }));
     
     res.render('dashboard', {
-        page_title: 'Tech Blog (Dashboard)',
         posts,
         logged_in: req.session.logged_in
     });
@@ -24,7 +23,6 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
 router.get('/add-post', withAuth, async (req, res) => {
     res.render('add-post', {
-        page_title: 'Tech Blog (add-post)',
         logged_in: req.session.logged_in
     });
 });
@@ -49,7 +47,6 @@ router.get('/', async (req, res) => {
 
         const posts = postData.map((post) => post.get({ plain: true}));
         res.render('homepage', {
-            page_title: 'Tech Blog (Home Page)',
             posts,
             logged_in: req.session.logged_in,
             user_id: req.session.user_id
