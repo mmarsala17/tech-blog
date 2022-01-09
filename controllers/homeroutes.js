@@ -27,12 +27,6 @@ router.get('/add-post', withAuth, async (req, res) => {
     });
 });
 
-router.get('/update-post', async (req, res) {
-    res.render('update-post', {
-        page_title: 'Tech Blog',
-        logged_in: req.session.logged_in
-    });
-});
 
 router.get('/', async (req, res) => {
     try {
